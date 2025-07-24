@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base{
+    :root{
+    --salmon: #EF9D71;
+    --black:#000;
+    --white:#fff;
+    --cyan:#AEDEE0;
+    --dsalmon:#552225;
+    --dcyan:#232E30;
+}
+
+body[theme='black']
+{
+    background-color: var(--black)
+}
+body[theme='black'] .section
+{
+    /* background-color: black; */
+    color:var(--white)
+}
+body[theme = "white"]
+{
+    background-color: var(--white);
+}
+body[theme = "white"] .section
+{
+    color: black;
+}
+body[theme = "cyan"]
+{
+    background-color:var(--cyan);
+}
+body[theme = "cyan"] .section
+{
+    color: var(--dcyan)
+}
+body[theme = "salmon"]
+{
+    background-color: var(--salmon);
+}
+body[theme = "salmon"] .section
+{
+    color: var(--dsalmon);
+}
+@font-face {
+  font-family: 'machina';
+  src: url('659dbdfd5a080be8d348316f_PPNeueMachina_-Light.ttf') format('truetype');
+}
+::selection
+{
+    /* color:rgb(255, 197, 90); */
+    background-color: #EF9D71;
+}
+
+.vdio
+{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+   body {
+      transition: background 0.5s ease, color 0.5s ease;
+    }
+}
