@@ -44,7 +44,7 @@ body[theme = "salmon"] .section
     color: var(--dsalmon);
 }
 @font-face {
-  font-family: 'machina';
+  font-family:'machina';
   src: url('659dbdfd5a080be8d348316f_PPNeueMachina_-Light.ttf') format('truetype');
 }
 ::selection
